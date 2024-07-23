@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Circular Std";
+  src: local("Circular Std"),
+  url(/Fonts/CircularStd-Medium.woff2) format(woff2);
+  font-weight: 400;
+  font-size: 16px;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular Std";
+  src: local("Circular Std"),
+  url(/Fonts/CircularStd-Bold.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 16px;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumPen";
+  src: local("NanumPen"),
+  url(/Fonts/NanumPenScript-Regular.ttf) format(ttf);
+  font-weight: 400;
+  font-size: 16px;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: local("Space Mono"),
+  url(/Fonts/SpaceMono-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-size: 16px;
+  font-display: swap;
+  font-style: normal;
+}

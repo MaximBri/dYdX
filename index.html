@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dYdX</title>
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" href="./CSS/fonts.css">
+  <link rel="stylesheet" href="./Scss/style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+</head>
+<body>
+  <div class="header-main_wrapper">
+    <header class="header" id="top">
+        <div class="container">
+          <nav class="header__nav">
+            <a href="#" class="header__nav-logo">
+              <img src="./Data/globals/Logo.png" alt="logo">
+            </a>
+            <ul class="header__nav_box">
+              <li class="header__nav_item">
+                <a href="./Discover.html" class="header__nav_item-content anim-lines">
+                  Discover initiatives
+                </a>
+                <a href="./Grants.html" class="header__nav_item-content anim-lines">
+                  Funded grants
+                </a>
+                <a href="#" class="header__nav_item-content anim-lines">
+                  Program expenses
+                </a>
+                <a href="#" class="header__nav_item-content anim-lines">
+                  Blog
+                </a>
+                <a href="#" class="header__nav_item-content anim-lines">
+                  FAQ
+                </a>
+                <a href="#" class="header__nav_item-btn btn-type1">
+                  Apply for grant
+                </a>
+              </li>
+            </ul>
+            <div class="header__nav-media">
+              <a href="#" id="header-btn" class="header__nav_item-btn btn-type1">
+                Apply
+              </a>
+              <a href="#" class="burger burger-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+              </a>
+              <div class="burger-menu hidden">
+                <div class="burger__inner">
+                  <div class="header__media-nav">
+                    <a href="#" class="header__nav-logo_media">
+                      <img src="./Data/globals/Logo.png" alt="logo">
+                    </a>
+                    <div class="header__nav-media_right">
+                      <a href="#" id="header-btn" class="header__nav_item-btn btn-type1">
+                        Apply
+                      </a>
+                      <a href="#" class="burger-exit burger-btn">
+                        <div></div>
+                        <div></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="burger-item-wrapper">
+                    <a href="./Discover.html" class="burger-item burger-btn">
+                      Discover initiatives
+                    </a>
+                    <a href="./Grants.html" class="burger-item burger-btn">
+                      Funded grants
+                    </a>
+                    <a href="#" class="burger-item burger-btn">
+                      Program expenses
+                    </a>
+                    <a href="#" class="burger-item burger-btn">
+                      Blog
+                    </a>
+                    <a href="#" class="burger-item burger-btn">
+                      FAQ
+                    </a>
+                  </div>
+                  <div class="burger__nav-media_links">
+                    <a href="#" class="burger__nav-media_link">
+                      <img src="./Data/links/twit.png" alt="">
+                    </a>
+                    <a href="#" class="burger__nav-media_link">
+                      <img src="./Data/links/Discord.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <section class="main">
+      <div class="container">
+        <div class="main-wrapper">
+          <h1 class="main_title">Powering the future of dYdX through community grants</h1>
+          <div class="main__center">
+            <a href="./Discover.html" class="mian__btm_btn-left btn-type2">Discover RFPs</a>
+            <a href="#" class="mian__btm_btn-right btn-type1">Apply for grant
+              <img src="./Data/main/fi_arrow-right.png" alt="">
+            </a>
+          </div>
+          <div class="main__btm">
+            <div class="main__btm_item">
+              <h3 class="main__btm_title">100+</h3>
+              <h4 class="main__btm_subtitle">projects funded</h4>
+            </div>
+            <div class="main__btm_item">
+              <h3 class="main__btm_title">$3+ milion</h3>
+              <h4 class="main__btm_subtitle">awarded</h4>
+            </div>
+            <div class="main__btm_item">
+              <h3 class="main__btm_title">400+</h3>
+              <h4 class="main__btm_subtitle">projects funded</h4>
+            </div>
+          </div>
+          <!-- <img src="./Data/main/Down arrow.png" alt="arrow-bottom"> -->
+        </div>
+      </div>
+    </section>
+  </div>
+  <main>
+    <section class="proj anim load-right">
+      <div class="proj-wrapper container">
+        <h2 class="proj_title title">Projects built with grants</h2>
+        <h3 class="proj_subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</h3>
+        <a href="#" class="proj_descr"> View all funded projects
+          <img src="./Data/objects/fi_arrow-right.png" alt="right arrow">
+        </a>
+      </div>
+      <div class="proj__slider_container">
+        <span class="proj__slider_nav">
+          <a href="#" class="proj__slider_arrow left" id="left">
+            <img src="./Data/objects/control-arrow.png" alt="left arrow">
+          </a>
+          <a href="#" class="proj__slider_arrow right" id="right">
+            <img src="./Data/objects/control-arrow.png" alt="right arrow">
+          </a>
+        </span>
+        <div class="proj__slider" id="proj_slider">
+          <a href="./Grant.html" class="proj__slide">
+            <div class="proj__item_box">
+              <h4 class="proj__item_title">Crowdfund</h4>
+              <h3 class="proj__item_subtitle">Funding rates page</h3>
+              <h5 class="proj__item_price">Funding amount: $5,000 - $6,000</h5>
+              <p class="proj__item_descr">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+            </div>
+            <span class="proj__item_mans">
+              <img src="./Data/objects/man1.png" alt="man">
+              <img src="./Data/objects/man2.png" alt="man">
+              <img src="./Data/objects/man3.png" alt="man">
+              <img src="./Data/objects/man1.png" alt="man">
+            </span>
+          </a>
+          <a href="./Grant.html" class="proj__slide">
+            <div class="proj__item_box">
+              <h4 class="proj__item_title">Edition</h4>
+              <h3 class="proj__item_subtitle">Tradingview integration</h3>
+              <h5 class="proj__item_price">Funding amount: $5,000 - $6,000</h5>
+              <p class="proj__item_descr">The grant will be used to build a web application that integrates Tradingview strategies into a dYdX Trading account to execute trades directly through a strategy. Users will be able to tap into Tradingview resources and test out different ...</p>
+            </div>
+            <span class="proj__item_mans">
+              <img src="./Data/objects/man1.png" alt="man">
+              <img src="./Data/objects/man2.png" alt="man">
+            </span>
+          </a>
+          <a href="./Grant.html" class="proj__slide">
+            <div class="proj__item_box">
+              <h4 class="proj__item_title">Entry</h4>
+              <h3 class="proj__item_subtitle">Rewards optimization research and paper</h3>
+              <h5 class="proj__item_price">Funding amount: $5,000 - $6,000</h5>
+              <p class="proj__item_descr">The Grant will be used to write a full research report and code samples that will determine optimal trading strategies for rewards maximization. The paper will be marketed across several platforms and shared among trading circles to help readership.</p>
+            </div>
+            <span class="proj__item_mans">
+              <img src="./Data/objects/man1.png" alt="man">
+              <img src="./Data/objects/man2.png" alt="man">
+              <img src="./Data/objects/man3.png" alt="man">
+            </span>
+          </a>
+          <a href="./Grant.html" class="proj__slide">
+            <div class="proj__item_box">
+              <h4 class="proj__item_title">Crowdfund</h4>
+              <h3 class="proj__item_subtitle">Funding rates page</h3>
+              <h5 class="proj__item_price">Funding amount: $5,000 - $6,000</h5>
+              <p class="proj__item_descr">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+            </div>
+            <span class="proj__item_mans">
+              <img src="./Data/objects/man1.png" alt="man">
+              <img src="./Data/objects/man2.png" alt="man">
+              <img src="./Data/objects/man3.png" alt="man">
+            </span>
+          </a>
+          <a href="./Grant.html" class="proj__slide">
+            <div class="proj__item_box">
+              <h4 class="proj__item_title">Crowdfund</h4>
+              <h3 class="proj__item_subtitle">Funding rates page</h3>
+              <h5 class="proj__item_price">Funding amount: $5,000 - $6,000</h5>
+              <p class="proj__item_descr">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+            </div>
+            <span class="proj__item_mans">
+              <img src="./Data/objects/man1.png" alt="man">
+              <img src="./Data/objects/man2.png" alt="man">
+              <img src="./Data/objects/man3.png" alt="man">
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="news anim load-left">
+      <div class="container">
+        <div class="news-wrapper">
+          <div class="news__main">
+            <h2 class="news_title title">What’s new?</h2>
+            <img src="./Data/news/Sparkle _ 1.png" alt="picture" class="news__main_title_img">
+            <h3 class="news_subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</h3>
+            <a href="#" class="proj_descr">Read more on our blog
+              <img src="./Data/objects/fi_arrow-right.png" alt="right arrow">
+            </a>
+          </div>
+          <ul class="news__btm">
+            <li class="news__btm_card">
+              <img src="./Data/news/Image1.png" alt="event">
+              <div class="news__card_box">
+                <div class="news__card_helper">
+                  <h4 class="main__card_box_title">Funding round</h4>
+                  <h3 class="main__card_box_subtitle">Round 9 of approvals</h3>
+                </div>
+                <h5 class="news__card_box_time">January 1, 2022</h5>
+              </div>
+            </li>
+            <li class="news__btm_card">
+              <img src="./Data/news/Image2.png" alt="event">
+              <div class="news__card_box">
+                <div class="news__card_helper">
+                  <h4 class="main__card_box_title">Funding round</h4>
+                  <h3 class="main__card_box_subtitle">Round 9 of approvals</h3>
+                </div>
+                <h5 class="news__card_box_time">January 1, 2022</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="quest anim load-btm">
+      <div class="container">
+        <div class="quest-wrapper">
+          <div class="quest__texts">
+            <h2 class="quest_title title">Frequently asked questions</h2>
+            <h3 class="quest_subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</h3>
+          </div>
+          <ul class="quest__box">
+            <li class="quest__box_item">
+              <a href="#" class="quest__box_item-click">
+                <div class="quest__box_item_open">
+                  <img src="./Data/questions/fi_plus.png" alt="decor">
+                </div>
+                <div class="quest__box_item-vis">
+                  <span class="quest__box_item_text">How do I apply?</span>
+                </div>
+                <div class="quest__box_item-hid hidden2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus fuga. Aliquid veniam optio libero quia quidem odit atque corrupti in obcaecati, rerum, itaque nemo, praesentium perferendis deserunt nam qui.
+                </div>
+              </a>
+            </li>
+            <li class="quest__box_item">
+              <a href="#" class="quest__box_item-click">
+                <div class="quest__box_item_open">
+                  <img src="./Data/questions/fi_plus.png" alt="decor">
+                </div>
+                <div class="quest__box_item-vis">
+                  <span class="quest__box_item_text">Can I apply as a U.S. based person/company?</span>
+                </div>
+                <div class="quest__box_item-hid hidden2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus fuga. Aliquid veniam optio libero quia quidem odit atque corrupti in obcaecati, rerum, itaque nemo, praesentium perferendis deserunt nam qui.
+                </div>
+              </a>
+            </li>
+            <li class="quest__box_item">
+              <a href="#" class="quest__box_item-click">
+                <div class="quest__box_item_open">
+                  <img src="./Data/questions/fi_plus.png" alt="decor">
+                </div>
+                <div class="quest__box_item-vis">
+                  <span class="quest__box_item_text">How will I be compensated?</span>
+                </div>
+                <div class="quest__box_item-hid hidden2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus fuga. Aliquid veniam optio libero quia quidem odit atque corrupti in obcaecati, rerum, itaque nemo, praesentium perferendis deserunt nam qui.
+                </div>
+              </a>
+            </li>
+            <li class="quest__box_item">
+              <a href="#" class="quest__box_item-click">
+                <div class="quest__box_item_open">
+                  <img src="./Data/questions/fi_plus.png" alt="decor">
+                </div>
+                <div class="quest__box_item-vis">
+                  <span class="quest__box_item_text">What type of project will qualify for a Grant?</span>
+                </div>
+                <div class="quest__box_item-hid hidden2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus fuga. Aliquid veniam optio libero quia quidem odit atque corrupti in obcaecati, rerum, itaque nemo, praesentium perferendis deserunt nam qui.
+                </div>
+              </a>
+            </li>
+            <li class="quest__box_item">
+              <a href="#" class="quest__box_item-click">
+                <div class="quest__box_item_open">
+                  <img src="./Data/questions/fi_plus.png" alt="decor">
+                </div>
+                <div class="quest__box_item-vis">
+                  <span class="quest__box_item_text">What is the application timeline? When can I expect to hear back?</span>
+                </div>
+                <div class="quest__box_item-hid hidden2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus fuga. Aliquid veniam optio libero quia quidem odit atque corrupti in obcaecati, rerum, itaque nemo, praesentium perferendis deserunt nam qui.
+                </div>
+              </a>
+            </li>
+            <li class="quest__box_item">
+              <a href="#" class="quest__box_item-click">
+                <div class="quest__box_item_open">
+                  <img src="./Data/questions/fi_plus.png" alt="decor">
+                </div>
+                <div class="quest__box_item-vis">
+                  <span class="quest__box_item_text">How can I increase my chances of getting funded?</span>
+                </div>
+                <div class="quest__box_item-hid hidden2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus fuga. Aliquid veniam optio libero quia quidem odit atque corrupti in obcaecati, rerum, itaque nemo, praesentium perferendis deserunt nam qui.
+                </div>
+              </a>
+            </li>
+            <li class="quest__box_item">
+              <a href="#" class="quest__box_item-click">
+                <div class="quest__box_item_open">
+                  <img src="./Data/questions/fi_plus.png" alt="decor">
+                </div>
+                <div class="quest__box_item-vis">
+                  <span class="quest__box_item_text">How often do you approve new Rounds of funding?</span>
+                </div>
+                <div class="quest__box_item-hid hidden2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus fuga. Aliquid veniam optio libero quia quidem odit atque corrupti in obcaecati, rerum, itaque nemo, praesentium perferendis deserunt nam qui.
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="proc anim load-top">
+      <div class="container">
+        <div class="proc-wrapper">
+          <div class="proc_texts">
+            <h2 class="proc_title title">Application process</h2>
+            <img src="./Data/process/breaked line.png" alt="breaked line">
+            <h3 class="proc_subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</h3>
+          </div>
+          <ul class="proc__box">
+            <li class="proc__box_item">
+              <h4 class="proc__box_item_num">1</h4>
+              <h3 class="proc__box_item_title">Apply</h3>
+              <h5 class="proc__box_item_descr">Submit a complete application to the dYdX Grants Team including as many details as possible about the proposed idea and their background. </h5>
+            </li>
+            <img src="./Data/process/Right arrow curved.png" class="proc__box_arrow1" alt="arrow">
+            <li class="proc__box_item">
+              <h4 class="proc__box_item_num">2</h4>
+              <h3 class="proc__box_item_title">Interview</h3>
+              <h5 class="proc__box_item_descr">If your application is selected, the dYdX Grants will conduct 1-2 interviews to collect more information on the Applicant's background and the proposal.</h5>
+            </li>
+            <img src="./Data/process/Right arrow curved.png" class="proc__box_arrow2" alt="arrow">
+            <li class="proc__box_item">
+              <h4 class="proc__box_item_num">3</h4>
+              <h3 class="proc__box_item_title">Grant offer</h3>
+              <h5 class="proc__box_item_descr">The dYdX Grants team will determine if the proposal fits into the grant program. A vesting schedule and timeline for product development reports will also be determined in the offer;</h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="ask anim load-left">
+      <div class="container">
+        <div class="ask-container">
+          <h3 class="ask_title">Have a project in mind?</h3>
+          <h4 class="ask_subtitle">Let’s create something awesome.</h4>
+          <a href="#" class="ask_btn">Apply for grant
+            <img src="./Data/objects/fi_arrow-right.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer__left">
+          <a href="#top"><img src="./Data/footer/logo.png" alt="logo"></a>
+          <ul class="footer__nav_box">
+            <li class="footer__nav_item">
+              <a href="#" class="header__nav_item-content anim-lines">
+                About
+              </a>
+              <a href="#" class="header__nav_item-content anim-lines">
+                FAQ
+              </a>
+              <a href="#" class="header__nav_item-content anim-lines">
+                Brand assets
+              </a>
+              <a href="#" class="header__nav_item-content anim-lines">
+                dYdX Foundation
+                <img src="./Data/footer/fi_external-link.png" alt="decoration">
+              </a>
+              <a href="#" class="header__nav_item-content anim-lines">
+                dYdX trading
+                <img src="./Data/footer/fi_external-link.png" alt="decoration">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <a href="#"><img src="./Data/links/twit.png" alt="twitter"></a>
+          <a href="#"><img src="./Data/links/Discord.png" alt="Discord"></a>
+        </div>
+      </div>
+    </div>
+    <img class="footer-bg" src="./Data/footer/Grid - Bottom.png" alt="background">
+  </footer>
+  <!-- <form action="db.php">
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="pass" placeholder="Password">
+    <button type="submit">Send</button>
+  </form> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mongoose/6.0.13/mongoose.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dYdX</title>
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" href="./CSS/fonts.css">
+  <link rel="stylesheet" href="./Discover initiatives (RFPs)/Scss/styleDiscover.css">
+  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" /> -->
+</head>
+<body>
+  <div class="background">
+    <header class="header" id="top">
+      <div class="container">
+        <nav class="header__nav">
+          <a href=".." class="header__nav-logo">
+            <img src="../Data/globals/Logo.png" alt="logo">
+          </a>
+          <ul class="header__nav_box">
+            <li class="header__nav_item">
+              <a href="#" class="header__nav_item-content anim-lines">
+                Discover initiatives
+              </a>
+              <a href="#" class="header__nav_item-content anim-lines">
+                Funded grants
+              </a>
+              <a href="#" class="header__nav_item-content anim-lines">
+                Program expenses
+              </a>
+              <a href="#" class="header__nav_item-content anim-lines">
+                Blog
+              </a>
+              <a href="#" class="header__nav_item-content anim-lines">
+                FAQ
+              </a>
+              <a href="#" class="header__nav_item-btn btn-type1">
+                Apply for grant
+              </a>
+            </li>
+          </ul>
+          <div class="header__nav-media">
+            <a href="#" id="header-btn" class="header__nav_item-btn btn-type1">
+              Apply
+            </a>
+            <a href="#" class="burger burger-btn">
+              <div></div>
+              <div></div>
+              <div></div>
+            </a>
+            <div class="burger-menu hidden">
+              <div class="burger__inner">
+                <div class="header__media-nav">
+                  <a href="#" class="header__nav-logo_media">
+                    <img src="../Data/globals/Logo.png" alt="logo">
+                  </a>
+                  <div class="header__nav-media_right">
+                    <a href="#" id="header-btn" class="header__nav_item-btn btn-type1">
+                      Apply
+                    </a>
+                    <a href="#" class="burger-exit burger-btn">
+                      <div></div>
+                      <div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="burger-item-wrapper">
+                  <a href="#" class="burger-item burger-btn">
+                    Discover initiatives
+                  </a>
+                  <a href="#" class="burger-item burger-btn">
+                    Funded grants
+                  </a>
+                  <a href="#" class="burger-item burger-btn">
+                    Program expenses
+                  </a>
+                  <a href="#" class="burger-item burger-btn">
+                    Blog
+                  </a>
+                  <a href="#" class="burger-item burger-btn">
+                    FAQ
+                  </a>
+                </div>
+                <div class="burger__nav-media_links">
+                  <a href="#" class="burger__nav-media_link">
+                    <img src="../Data/links/twit.png" alt="">
+                  </a>
+                  <a href="#" class="burger__nav-media_link">
+                    <img src="../Data/links/Discord.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section>
+        <div class="container">
+          <div class="main-wrapper">
+            <h1 class="main_title">Discover initiatives (RFPs)</h1>
+            <h2 class="main_subtitle">The list below includes initial ideas that we think could make excellent Grants. This is a living list that will continue to update as ideas popup.</h2>
+              <nav class="main_filters" id="filters">
+                <button class="mixer-active" data-filter="all">All</button>
+                <button data-filter="open">Open</button>
+                <button data-filter="funded">Funded</button>
+                <button data-filter="completed">Completed</button>
+              </nav>
+              <ul class="products-container" id="products">
+                <li class="product anim load-btm" data-category="funded">
+                  <div class="product__main">
+                    <h3 class="product_title">Funding Rate Page</h3>
+                    <h4 class="product_subtitle">Page that provides a live look at all funding rates with popular timeframes in annualized format</h4>
+                    <h5 class="product_price">Funding amount: $45,000 - $85,000</h5>
+                  </div>
+                  <h5 class="product_state">Funded</h5>
+                </li>
+                <li class="product anim load-btm" data-category="funded">
+                  <div class="product__main">
+                    <h3 class="product_title">CLI Trading Tool</h3>
+                    <h4 class="product_subtitle">Self-hosted CLI tool leveraging the dYdX API to allow all functionalities from a terminal</h4>
+                    <h5 class="product_price">Funding amount: $45,000 - $85,000</h5>
+                  </div>
+                  <h5 class="product_state">Funded</h5>
+                </li>
+                <li class="product anim load-btm" data-category="open">
+                  <div class="product__main">
+                    <h3 class="product_title">New Language SDKs</h3>
+                    <h4 class="product_subtitle">Replicate existing Python SDK to new programming languages with all the same features</h4>
+                    <h5 class="product_price">Funding amount: $45,000 - $85,000</h5>
+                  </div>
+                  <h5 class="product_state open">Open</h5>
+                </li>
+                <li class="product anim load-btm" data-category="completed">
+                  <div class="product__main">
+                    <h3 class="product_title">Liquidation Alert Tool</h3>
+                    <h4 class="product_subtitle">Self-hosted tool that alerts the trader of upcoming liquidation prices across multiple messaging venues</h4>
+                    <h5 class="product_price">Funding amount: $45,000 - $85,000</h5>
+                  </div>
+                  <h5 class="product_state completed">Completed</h5>
+                </li>
+                <li class="product anim load-btm" data-category="funded">
+                  <div class="product__main">
+                    <h3 class="product_title">Governance Dashboard</h3>
+                    <h4 class="product_subtitle">Governance page to promote  discussions, proposals, delegation and voting</h4>
+                    <h5 class="product_price">Funding amount: $45,000 - $85,000</h5>
+                  </div>
+                  <h5 class="product_state">Funded</h5>
+                </li>
+                <li class="product anim load-btm" data-category="funded">
+                  <div class="product__main">
+                    <h3 class="product_title">Delegation Tool</h3>
+                    <h4 class="product_subtitle">Webpage to allow active participants to market their voting and enable direct delegation from DYDX holders</h4>
+                    <h5 class="product_price">Funding amount: $45,000 - $85,000</h5>
+                  </div>
+                  <h5 class="product_state">Funded</h5>
+                </li>
+                <li class="product anim load-btm" data-category="funded">
+                  <div class="product__main">
+                    <h3 class="product_title">Reward tracking & Simulator</h3>
+                    <h4 class="product_subtitle">Page or tool that allows traders to calculate future rewards and simulate earnings from activity</h4>
+                    <h5 class="product_price">Funding amount: $45,000 - $85,000</h5>
+                  </div>
+                  <h5 class="product_state">Funded</h5>
+                </li>
+                <li class="product anim load-btm" data-category="funded">
+                  <div class="product__main">
+                    <h3 class="product_title">Newsletter</h3>
+                    <h4 class="product_subtitle">Weekly or Monthly newsletters promoting and educating the dYdX platform</h4>
+                    <h5 class="product_price">Funding amount: $45,000 - $85,000</h5>
+                  </div>
+                  <h5 class="product_state">Funded</h5>
+                </li>
+                <li class="product anim load-btm" data-category="funded">
+                  <div class="product__main">
+                    <h3 class="product_title">Academy Contributions</h3>
+                    <h4 class="product_subtitle">Webpages, Courses, Glossaries and Youtube libraries educating new users on dYdX</h4>
+                    <h5 class="product_price">Funding amount: $45,000 - $85,000</h5>
+                  </div>
+                  <h5 class="product_state">Funded</h5>
+                </li>
+                <li class="product anim load-btm" data-category="open">
+                  <div class="product__main">
+                    <h3 class="product_title">Discord bots</h3>
+                    <h4 class="product_subtitle">Additional Discord bots that notify members of activity on dYdX and governance</h4>
+                    <h5 class="product_price">Funding amount: $45,000 - $85,000</h5>
+                  </div>
+                  <h5 class="product_state open">Open</h5>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </section>
+      <section class="ask anim load-right">
+        <div class="container">
+          <div class="ask-container">
+            <h3 class="ask_title">Have a project in mind?</h3>
+            <h4 class="ask_subtitle">Let’s create something awesome.</h4>
+            <a href="#" class="ask_btn">Apply for grant
+              <img src="./Data/objects/fi_arrow-right.png" alt="">
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer__left">
+            <a href=".."><img src="./Data/footer/logo.png" alt="logo"></a>
+            <ul class="footer__nav_box">
+              <li class="footer__nav_item">
+                <a href="#" class="header__nav_item-content anim-lines">
+                  About
+                </a>
+                <a href="#" class="header__nav_item-content anim-lines">
+                  FAQ
+                </a>
+                <a href="#" class="header__nav_item-content anim-lines">
+                  Brand assets
+                </a>
+                <a href="#" class="header__nav_item-content anim-lines">
+                  dYdX Foundation
+                  <img src="./Data/footer/fi_external-link.png" alt="decoration">
+                </a>
+                <a href="#" class="header__nav_item-content anim-lines">
+                  dYdX trading
+                  <img src="./Data/footer/fi_external-link.png" alt="decoration">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__right">
+            <a href="#"><img src="./Data/links/twit.png" alt="twitter"></a>
+            <a href="#"><img src="./Data/links/Discord.png" alt="Discord"></a>
+          </div>
+        </div>
+      </div>
+      <img class="footer-bg" src="./Data/footer/Grid - Bottom.png" alt="background">
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./Discover initiatives (RFPs)/Js/main.js"></script>
+</body>
+</html>

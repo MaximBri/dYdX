@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- <link rel="stylesheet" href="./CSS/reset.css"> -->
+</head>
+<body>
+<style>
+  .load-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  .load-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  .load-top {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  .load-btm {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  .slow-anim {
+    opacity: 1;
+    transform: translate(0);
+  }
+  .block {
+    height: 500px;
+    width: 200px;
+    background-color: red;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  </style>
+  <main class="main">
+    <div class="anim block"></div>
+    <div class="anim block"></div>
+    <div class="anim block load-left"></div>
+    <div class="anim block load-right"></div>
+    <div class="anim block load-btm"></div>
+    <div class="anim block load-top"></div>
+    <div class="anim block"></div>
+    <div class="anim block"></div>
+    <div class="anim block"></div>
+    <div class="anim block"></div>
+  </main>
+  <script>
+    const contentBlocks = document.querySelectorAll('.anim'); // класс-указатель на наличие анимации
+    function slideInOnScroll() {
+      contentBlocks.forEach(block => {
+      if (block.getBoundingClientRect().top < window.innerHeight * 0.7) block.classList.add('slow-anim'); // плавное появление
+      else block.classList.remove('slow-anim'); // плавное исчезание
+      });
+    }
+    window.addEventListener('scroll', slideInOnScroll);
+    window.addEventListener('touchmove', function(event) {
+      slideInOnScroll();
+    });
+  </script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./JS/mixitup.min.js"></script>
+<script src="./test.js"></script>
+</html>

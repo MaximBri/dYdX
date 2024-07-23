@@ -1,0 +1,176 @@
+.main {
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main_title {
+  margin-top: 80px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -2.2%;
+  margin-bottom: 24px;
+}
+.main_subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -1.4%;
+  color: var(--grey);
+  margin-bottom: 40px;
+  max-width: 60vw;
+}
+.main_filters {
+  display: flex;  
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  button{
+    padding: 12px 16px;
+    color: var(--white);
+    border-radius: 7px;
+    background-color: rgba($color: #000000, $alpha: 0.0);
+  }
+  .mixer-active{
+    background-color: var(--black-grey);
+  }
+}
+.products-container {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 60vw;
+}
+.product {
+  background-color: var(--black-grey);
+  padding: 24px;
+  border-radius: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.product__main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: baseline;
+  text-align: left;
+}
+.product_title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -1.9%;
+}
+.product_subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -1.1%;
+}
+.product_price {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--grey);
+}
+.product_state {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: 90px;
+  justify-content: center;
+  border-radius: 100px;
+  padding: 4px 16px;
+  background: rgb(28, 28, 40);
+  border: 1px solid var(--bg);
+  box-sizing: border-box;
+}
+.completed{
+  background: rgb(22, 181, 127);
+  position: relative;
+  padding-right: 30px;
+  width: 130px;
+}
+.completed::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('/Discover initiatives (RFPs)/Data/fi_check.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.open{
+  background: var(--blue);
+  width: 60px;
+}
+@media (max-width: 1024px){
+  .main_title {
+    margin-top: 60px;
+    font-size: 50px;
+    line-height: 62px;
+    margin-bottom: 22px;
+  }
+  .main_subtitle {
+    margin-bottom: 30px;
+    max-width: 80vw;
+  }
+  .products-container {
+    padding: 70px 0;
+    width: 70vw;
+  }
+}
+@media (max-width: 768px){
+  .product {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .main_title {
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .main_subtitle {
+    max-width: 85vw;
+  }
+  .products-container {
+    padding: 60px 0;
+    width: 80vw;
+  }
+}
+@media (max-width: 478px){
+  .main_title {
+    margin-top: 24px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .main_subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    max-width: 90vw;
+  }
+  .main_filters {
+    gap: 16px;
+    button{
+      padding: 10px 12px;
+    }
+  }
+  .products-container {
+    padding: 40px 0;
+    width: 90vw;
+  }
+}

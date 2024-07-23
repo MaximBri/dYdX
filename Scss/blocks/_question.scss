@@ -1,0 +1,113 @@
+.quest {
+  width: 100%;
+  padding: 60px 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.quest__texts{
+  background-image: url(/Data/objects/Grid\ -\ Header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  padding-bottom: 80px;
+}
+.quest-wrapper {
+}
+.quest_title {
+  padding: 20px 0;
+  background-image: url(/Data/questions/Oval.png);
+  background-repeat: no-repeat;
+  background-position: 37vw 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quest_subtitle {
+}
+.quest__box {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quest__box_item {
+  width: 60vw;
+  padding: 25px 0;
+  border-top: 1px solid var(--black-grey);
+  border-bottom: 1px solid var(--black-grey);
+  text-align: left;
+}
+.quest__box_item-click {
+  position: relative;
+  width: 100%;
+}
+.quest__box_item_open {
+  width: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.quest__box_item-vis {
+  max-width: 80%;
+}
+.quest__box_item_text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -1.4%;
+}
+.quest__box_item-hid {
+  padding-top: 20px;
+  max-width: 60vw;
+}
+@media (max-width: 1024px){
+  .quest {
+    padding: 50px 0 60px;
+  }
+  .quest__texts{
+    padding-bottom: 60px;
+  }
+  .quest_title {
+    padding: 10px 0;
+    background-position: 50vw 50%;
+  }
+}
+@media (max-width: 768px){
+  .quest {
+    padding: 40px 0 50px;
+  }
+  .quest__texts{
+    padding-bottom: 50px;
+  }
+  .quest_title {
+    padding: 10px 0;
+    background-position: 55vw 50%;
+    background-size: 140px 60px;
+  }
+}
+@media (max-width: 476px){
+  .quest__box_item {
+    width: 80vw;
+    padding: 16px 0;
+  }
+  .quest {
+    padding: 30px 0 40px;
+  }
+  .quest__box_item_text, .quest__box_item-hid{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -1.1%;
+  }
+  .quest__texts{
+    padding-bottom: 40px;
+  }
+  .quest_title {
+    padding: 10px 0;
+    background-position: 55vw 50%;
+    background-size: 100px 40px;
+  }
+}

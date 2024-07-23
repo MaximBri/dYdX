@@ -1,0 +1,18 @@
+.container3{
+  margin-inline: 22vw;
+}
+@media (max-width: 1024px){
+  .container3{
+    margin-inline: 17vw;
+  }
+}
+@media (max-width: 768px){
+  .container3{
+    margin-inline: 12vw;
+  }
+}
+@media (max-width: 478px){
+  .container3{
+    margin-inline: 24px;
+  }
+}
