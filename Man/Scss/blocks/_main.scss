@@ -1,17 +1,155 @@
+body{
+  background-image:  url(/Man/Data/Grid-top.png);
+}
 .container3{
-  margin-inline: 22vw;
+  margin-inline: 20vw;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main__top {
+  position: relative;
+}
+.main__user-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img{
+    width: 200px;
+    height: 200px;
+  }
+}
+.main_name {
+  margin: 40px 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+}
+.main_btn-back {
+  position: absolute;
+  top: 16px;
+  left: -96px;
+}
+.main__info {
+}
+.main__info_texts {
+  display: flex;
+  flex-direction: column;
+}
+.main__info_title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.main__info_subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--grey);
+  margin: 16px 0 40px;
+}
+.main__info_links {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+.main__info_link {
+  font-size: 18px;
+  line-height: 24px;
+  height: 50px;
+  padding: 8px 24px 8px 8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 100px;
+  background-color: var(--black-grey);
+  transition: all .5s;
+  img{
+    padding: 4px;
+  }
+}
+.main__info_link:hover{
+  scale: 1.1;
 }
 @media (max-width: 1024px){
+  .main__info_links {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .container3{
     margin-inline: 17vw;
   }
+  .main__user-data {
+    img{
+      width: 180px;
+      height: 180px;
+    }
+  }
+  .main_name {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 @media (max-width: 768px){
+  .main__info_links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main__info_link{
+    transition: all 0s;
+  }
+  .main__info_link:hover{
+    scale: 1;
+  }
+  .main_btn-back {
+    // scale: 0.7;
+    left: -48px;
+  }
   .container3{
     margin-inline: 12vw;
   }
+  .main__user-data {
+    img{
+      width: 140px;
+      height: 140px;
+    }
+  }
+  .main_name {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .main__info_link {
+    font-size: 16px;
+    line-height: 22px;
+    height: 45px;
+    padding: 8px 18px 8px 8px;
+  }
 }
 @media (max-width: 478px){
+  .main__info_link {
+    font-size: 14px;
+    line-height: 20px;
+    height: 36px;
+    padding: 8px 16px 8px 8px;
+    gap: 16px;
+  }
+  .main__info_title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main_name {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .main__user-data {
+    img{
+      width: 110px;
+      height: 110px;
+    }
+  }
+  .main_btn-back {
+    left: -12px;
+  }
   .container3{
     margin-inline: 24px;
   }

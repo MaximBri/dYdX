@@ -23,7 +23,7 @@
             <a href="./Grants.html" class="header__nav_item-content anim-lines">
               Funded grants
             </a>
-            <a href="./Program.html" class="header__nav_item-content anim-lines">
+            <a href="#" class="header__nav_item-content anim-lines">
               Program expenses
             </a>
             <a href="#" class="header__nav_item-content anim-lines">
@@ -69,7 +69,7 @@
                 <a href="./Grants.html" class="burger-item burger-btn">
                   Funded grants
                 </a>
-                <a href="./Program.html" class="burger-item burger-btn">
+                <a href="#" class="burger-item burger-btn">
                   Program expenses
                 </a>
                 <a href="#" class="burger-item burger-btn">
@@ -93,80 +93,48 @@
       </nav>
     </div>
   </header>
-  <main class="first">
-    <section class="main container3">
-      <div class="main__top">
-        <div class="main__user-data">
-          <img src="./Man/Data/man.png" alt="photo">
-          <h1 class="main_name">Jane Cooper</h1>
-        </div>
-        <a href="./Grant.html" class="main_btn-back">
-          <img src="./Man/Data/Button-back.png" alt="back">
-        </a>
+  <main class="main">
+    <div class="container3">
+      <div class="main-wrapper">
+        <h1 class="main_title title"></h1>
+        <style>
+            .products-container {
+            }
+            .product {
+              width: 200px;
+              height: 200px;
+              background-color: #f5f5f5;
+              margin: 10px;
+              display: inline-block;
+              transition: transform 0.5s, opacity 0.5s, visibility 0.5s, position 0.5s;
+            }
+            .product.hidden {
+              transform: scale(0);
+              opacity: 0;
+              pointer-events: none;
+              position: absolute;
+              visibility: hidden;
+            }
+          </style>
+          <nav id="filters">
+            <button data-filter="all">All</button>
+            <button data-filter="category1">Category 1</button>
+            <button data-filter="category2">Category 2</button>
+            <button data-filter="category3">Category 3</button>
+          </nav>
+          <ul class="products-container" id="products">
+            <li class="product" data-category="category1">Product 1</li>
+            <li class="product" data-category="category1">Product 2</li>
+            <li class="product" data-category="category2">Product 3</li>
+            <li class="product" data-category="category2">Product 4</li>
+            <li class="product" data-category="category3">Product 5</li>
+            <li class="product" data-category="category3">Product 6</li>
+          </ul>
+          <script>
+            
+          </script>
       </div>
-      <div class="main__info">
-        <div class="main__info_texts">
-          <h2 class="main__info_title">About</h2>
-          <h3 class="main__info_subtitle">For athletes, high altitude produces two contradictory effects on performance. For explosive events (sprints up to 400 metres, long jump, triple jump) the reduction in atmospheric pressure means there is less resistance from the atmosphere and the athlete's performance will generally be better at high altitude.</h3>
-          <h2 class="main__info_title">Links</h2>
-          <div class="main__info_links">
-            <a href="#" class="main__info_link">
-              <img src="./Man/Data/twiter.png" alt="Twitter">
-              Twitter
-            </a>
-            <a href="#" class="main__info_link">
-              <img src="./Man/Data/in.png" alt="LinkedIn">
-              LinkedIn
-            </a>
-            <a href="#" class="main__info_link">
-              <img src="./Man/Data/github.png" alt="Github">
-              Github
-            </a>
-            <a href="#" class="main__info_link">
-              <img src="./Man/Data/web.png" alt="Website">
-              Website
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="grants">
-      <div class="container3">
-        <div class="grants-wrapper">
-          <div class="grants__texts anim load-top">
-            <h2 class="grants_title">Projects</h2>
-          </div>
-          <div class="grants__box anim load-right">
-            <a href="#" class="product__slide">
-              <div class="prod__item_box">
-                <h4 class="prod__item_title">Crowdfund</h4>
-                <h3 class="prod__item_subtitle">Funding rates page</h3>
-                <h5 class="prod__item_price">Funding amount: $5,000 - $6,000</h5>
-                <p class="prod__item_descr">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
-              </div>
-              <span class="prod__item_mans">
-                <img src="./Data/objects/man1.png" alt="man">
-                <img src="./Data/objects/man2.png" alt="man">
-                <img src="./Data/objects/man3.png" alt="man">
-                <img src="./Data/objects/man1.png" alt="man">
-              </span>
-            </a>
-            <a href="#" class="product__slide">
-              <div class="prod__item_box">
-                <h4 class="prod__item_title">Edition</h4>
-                <h3 class="prod__item_subtitle">Tradingview integration</h3>
-                <h5 class="prod__item_price">Funding amount: $5,000 - $6,000</h5>
-                <p class="prod__item_descr">The grant will be used to build a web application that integrates Tradingview strategies into a dYdX Trading account to execute trades directly through a strategy. Users will be able to tap into Tradingview resources and test out different ...</p>
-              </div>
-              <span class="prod__item_mans">
-                <img src="./Data/objects/man1.png" alt="man">
-                <img src="./Data/objects/man2.png" alt="man">
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="container">

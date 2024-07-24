@@ -5,7 +5,3 @@ $(function () {
     $(this).addClass('page2-btn-active')
   })
   })
-  console.log(0 == '');
-  var myFunction = () => {};
-  const myFuncti = function() {};
-

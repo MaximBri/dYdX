@@ -1,6 +1,11 @@
 .header {
   padding: 24px 0;
 }
+.background{
+  background-image: url('/Data/globals/bg.jpeg');
+  background-size: 100% 100%;
+  background-repeat: repeat-x;
+}
 .header__nav {
   display: flex;
   align-items: center;
@@ -28,10 +33,6 @@
   letter-spacing: 0%;
   transition: all .5s;
 }
-// .header__nav_item-content:hover, .burger-item:hover{
-//   color: var(--white);
-//   scale: 1.05;
-// }
 @media (max-width: 1024px)
 {
   .header__nav_item{

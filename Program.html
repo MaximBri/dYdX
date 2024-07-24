@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dYdX</title>
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" href="./CSS/fonts.css">
+  <link rel="stylesheet" href="./Program/Scss/style.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container">
+      <nav class="header__nav">
+        <a href=".." class="header__nav-logo">
+          <img src="../Data/globals/Logo.png" alt="logo">
+        </a>
+        <ul class="header__nav_box">
+          <li class="header__nav_item">
+            <a href="./Discover.html" class="header__nav_item-content anim-lines">
+              Discover initiatives
+            </a>
+            <a href="./Grants.html" class="header__nav_item-content anim-lines">
+              Funded grants
+            </a>
+            <a href="#" class="header__nav_item-content anim-lines">
+              Program expenses
+            </a>
+            <a href="#" class="header__nav_item-content anim-lines">
+              Blog
+            </a>
+            <a href="#" class="header__nav_item-content anim-lines">
+              FAQ
+            </a>
+            <a href="#" class="header__nav_item-btn btn-type1">
+              Apply for grant
+            </a>
+          </li>
+        </ul>
+        <div class="header__nav-media">
+          <a href="#" id="header-btn" class="header__nav_item-btn btn-type1">
+            Apply
+          </a>
+          <a href="#" class="burger burger-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </a>
+          <div class="burger-menu hidden">
+            <div class="burger__inner">
+              <div class="header__media-nav">
+                <a href="#" class="header__nav-logo_media">
+                  <img src="../Data/globals/Logo.png" alt="logo">
+                </a>
+                <div class="header__nav-media_right">
+                  <a href="#" id="header-btn" class="header__nav_item-btn btn-type1">
+                    Apply
+                  </a>
+                  <a href="#" class="burger-exit burger-btn">
+                    <div></div>
+                    <div></div>
+                  </a>
+                </div>
+              </div>
+              <div class="burger-item-wrapper">
+                <a href="./Discover.html" class="burger-item burger-btn">
+                  Discover initiatives
+                </a>
+                <a href="./Grants.html" class="burger-item burger-btn">
+                  Funded grants
+                </a>
+                <a href="#" class="burger-item burger-btn">
+                  Program expenses
+                </a>
+                <a href="#" class="burger-item burger-btn">
+                  Blog
+                </a>
+                <a href="#" class="burger-item burger-btn">
+                  FAQ
+                </a>
+              </div>
+              <div class="burger__nav-media_links">
+                <a href="#" class="burger__nav-media_link">
+                  <img src="../Data/links/twit.png" alt="">
+                </a>
+                <a href="#" class="burger__nav-media_link">
+                  <img src="../Data/links/Discord.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section>
+      <div class="container">
+        <div class="main-wrapper">
+          <h1 class="main_title">Program expenses</h1>
+          <nav class="main_filters" id="filters">
+            <button class="mixer-active" data-filter="all">All</button>
+            <button data-filter="open">Category1</button>
+            <button data-filter="funded">Category2</button>
+            <button data-filter="completed">Category3</button>
+          </nav>
+          <ul class="products-container" id="products">
+            <li class="transact__box_item anim load-btm" data-category="funded">
+              <div class="transact__left">
+                <h3 class="transact_title">Airtable Yearly Subscription</h3>
+                <h4 class="transact_date">Vendor</h4>
+                <h5 class="transact_descr">Airtable is used to build the application form and store all application data.</h5>
+              </div>
+              <div class="transact__right">
+                <h4 class="transact_price">$500.00</h4>
+                <img src="./Grant/Data/link_outside.png" alt="link">
+              </div>
+            </li>
+            <li class="transact__box_item anim load-btm" data-category="open">
+              <div class="transact__left">
+                <h3 class="transact_title">Expense title</h3>
+                <h4 class="transact_date">Type</h4>
+                <h5 class="transact_descr">Description</h5>
+              </div>
+              <div class="transact__right">
+                <h4 class="transact_price">-5,198.37 USDC</h4>
+                <img src="./Grant/Data/link_outside.png" alt="link">
+              </div>
+            </li>
+            <li class="transact__box_item anim load-btm" data-category="funded">
+              <div class="transact__left">
+                <h3 class="transact_title">Round 9</h3>
+                <h4 class="transact_date">Date</h4>
+                <h5 class="transact_descr">Description</h5>
+              </div>
+              <div class="transact__right">
+                <h4 class="transact_price">$250,000.00</h4>
+                <img src="./Grant/Data/link_outside.png" alt="link">
+              </div>
+            </li>
+            <li class="transact__box_item anim load-btm" data-category="completed">
+              <div class="transact__left">
+                <h3 class="transact_title">Round 9</h3>
+                <h4 class="transact_date">Date</h4>
+                <h5 class="transact_descr">Description</h5>
+              </div>
+              <div class="transact__right">
+                <h4 class="transact_price">$250,000.00</h4>
+                <img src="./Grant/Data/link_outside.png" alt="link">
+              </div>
+            </li>
+            <li class="transact__box_item anim load-btm" data-category="open">
+              <div class="transact__left">
+                <h3 class="transact_title">Round 9</h3>
+                <h4 class="transact_date">Date</h4>
+                <h5 class="transact_descr">Description</h5>
+              </div>
+              <div class="transact__right">
+                <h4 class="transact_price">$250,000.00</h4>
+                <img src="./Grant/Data/link_outside.png" alt="link">
+              </div>
+            </li>
+            <li class="transact__box_item anim load-btm" data-category="funded">
+              <div class="transact__left">
+                <h3 class="transact_title">Round 9</h3>
+                <h4 class="transact_date">Date</h4>
+                <h5 class="transact_descr">Description</h5>
+              </div>
+              <div class="transact__right">
+                <h4 class="transact_price">$250,000.00</h4>
+                <img src="./Grant/Data/link_outside.png" alt="link">
+              </div>
+            </li>
+            <li class="transact__box_item anim load-btm" data-category="completed">
+              <div class="transact__left">
+                <h3 class="transact_title">Round 9</h3>
+                <h4 class="transact_date">Date</h4>
+                <h5 class="transact_descr">Description</h5>
+              </div>
+              <div class="transact__right">
+                <h4 class="transact_price">$250,000.00</h4>
+                <img src="./Grant/Data/link_outside.png" alt="link">
+              </div>
+            </li>
+            <li class="transact__box_item anim load-btm" data-category="funded">
+              <div class="transact__left">
+                <h3 class="transact_title">Round 9</h3>
+                <h4 class="transact_date">Date</h4>
+                <h5 class="transact_descr">Description</h5>
+              </div>
+              <div class="transact__right">
+                <h4 class="transact_price">$250,000.00</h4>
+                <img src="./Grant/Data/link_outside.png" alt="link">
+              </div>
+            </li>
+            <li class="transact__box_item anim load-btm" data-category="open">
+              <div class="transact__left">
+                <h3 class="transact_title">Round 9</h3>
+                <h4 class="transact_date">Date</h4>
+                <h5 class="transact_descr">Description</h5>
+              </div>
+              <div class="transact__right">
+                <h4 class="transact_price">$250,000.00</h4>
+                <img src="./Grant/Data/link_outside.png" alt="link">
+              </div>
+            </li>
+            <li class="transact__box_item anim load-btm" data-category="completed">
+              <div class="transact__left">
+                <h3 class="transact_title">Round 9</h3>
+                <h4 class="transact_date">Date</h4>
+                <h5 class="transact_descr">Description</h5>
+              </div>
+              <div class="transact__right">
+                <h4 class="transact_price">$250,000.00</h4>
+                <img src="./Grant/Data/link_outside.png" alt="link">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer__left">
+          <a href=".."><img src="./Data/footer/logo.png" alt="logo"></a>
+          <ul class="footer__nav_box">
+            <li class="footer__nav_item">
+              <a href="#" class="header__nav_item-content anim-lines">
+                About
+              </a>
+              <a href="#" class="header__nav_item-content anim-lines">
+                FAQ
+              </a>
+              <a href="#" class="header__nav_item-content anim-lines">
+                Brand assets
+              </a>
+              <a href="#" class="header__nav_item-content anim-lines">
+                dYdX Foundation
+                <img src="./Data/footer/fi_external-link.png" alt="decoration">
+              </a>
+              <a href="#" class="header__nav_item-content anim-lines">
+                dYdX trading
+                <img src="./Data/footer/fi_external-link.png" alt="decoration">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <a href="#"><img src="./Data/links/twit.png" alt="twitter"></a>
+          <a href="#"><img src="./Data/links/Discord.png" alt="Discord"></a>
+        </div>
+      </div>
+    </div>
+    <img class="footer-bg" src="./Data/footer/Grid - Bottom.png" alt="background">
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./Program/Js/main.js"></script>
+</body>
+</html>
