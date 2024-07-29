@@ -9,6 +9,8 @@ const products = document.querySelectorAll('#products .product');
 filters.forEach(filter => {
   filter.addEventListener('click', () => {
     const category = filter.dataset.filter;
+    filters.forEach(btn => btn.classList.remove('mixer-active'));
+    filter.classList.add('mixer-active');
     products.forEach(product => {
       if (category == 'all' | product.dataset.category == category) {
         product.style.transform = 'scale(1)';
@@ -25,3 +27,16 @@ filters.forEach(filter => {
   });
 });
 // mixer
+// slow animation
+const contentBlocks = document.querySelectorAll('.anim'); // класс-указатель на наличие анимации
+    function slideInOnScroll() {
+      contentBlocks.forEach(block => {
+      if (block.getBoundingClientRect().top < window.innerHeight * 0.8) block.classList.add('slow-anim'); // плавное появление
+      else block.classList.remove('slow-anim'); // плавное исчезание
+      });
+    }
+    window.addEventListener('scroll', slideInOnScroll);
+    window.addEventListener('touchmove', function(event) {
+      slideInOnScroll();
+    });
+// slow animation

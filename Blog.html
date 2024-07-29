@@ -6,7 +6,7 @@
   <title>dYdX</title>
   <link rel="stylesheet" href="./CSS/reset.css">
   <link rel="stylesheet" href="./CSS/fonts.css">
-  <link rel="stylesheet" href="./Man/Scss/style.css">
+  <link rel="stylesheet" href="./Blog/Scss/style.css">
 </head>
 <body>
   <header class="header" id="top">
@@ -23,10 +23,10 @@
             <a href="./Grants.html" class="header__nav_item-content anim-lines">
               Funded grants
             </a>
-            <a href="#" class="header__nav_item-content anim-lines">
+            <a href="./Program.html" class="header__nav_item-content anim-lines">
               Program expenses
             </a>
-            <a href="#" class="header__nav_item-content anim-lines">
+            <a href="./Blog.html" class="header__nav_item-content anim-lines">
               Blog
             </a>
             <a href="#" class="header__nav_item-content anim-lines">
@@ -69,10 +69,10 @@
                 <a href="./Grants.html" class="burger-item burger-btn">
                   Funded grants
                 </a>
-                <a href="#" class="burger-item burger-btn">
+                <a href="./Program.html" class="burger-item burger-btn">
                   Program expenses
                 </a>
-                <a href="#" class="burger-item burger-btn">
+                <a href="./Blog.html" class="burger-item burger-btn">
                   Blog
                 </a>
                 <a href="#" class="burger-item burger-btn">
@@ -94,46 +94,89 @@
     </div>
   </header>
   <main class="main">
-    <div class="container3">
-      <div class="main-wrapper">
-        <h1 class="main_title title"></h1>
-        <style>
-            .products-container {
-            }
-            .product {
-              width: 200px;
-              height: 200px;
-              background-color: #f5f5f5;
-              margin: 10px;
-              display: inline-block;
-              transition: transform 0.5s, opacity 0.5s, visibility 0.5s, position 0.5s;
-            }
-            .product.hidden {
-              transform: scale(0);
-              opacity: 0;
-              pointer-events: none;
-              position: absolute;
-              visibility: hidden;
-            }
-          </style>
-          <nav id="filters">
-            <button data-filter="all">All</button>
-            <button data-filter="category1">Category 1</button>
-            <button data-filter="category2">Category 2</button>
-            <button data-filter="category3">Category 3</button>
-          </nav>
-          <ul class="products-container" id="products">
-            <li class="product" data-category="category1">Product 1</li>
-            <li class="product" data-category="category1">Product 2</li>
-            <li class="product" data-category="category2">Product 3</li>
-            <li class="product" data-category="category2">Product 4</li>
-            <li class="product" data-category="category3">Product 5</li>
-            <li class="product" data-category="category3">Product 6</li>
-          </ul>
-          <script>
-            
-          </script>
-      </div>
+    <div class="main-wrapper">
+      <h1 class="main_title title">Blog</h1>
+      <nav id="filters" class="main__filters">
+        <button data-filter="all" class="mixer-active">Latest</button>
+        <button data-filter="fund">Funding round</button>
+        <button data-filter="spot">Spotlight</button>
+        <button data-filter="news">News & updates</button>
+      </nav>
+      <ul class="products-container" id="products">
+        <li class="product anim load-left" data-category="news">
+          <a href="#">
+            <img src="./Blog/Data/Image1.png" alt="image" class="blog_img">
+            <div class="blog__item">
+              <div class="blog__item_main-part">
+                <h3 class="blog__item_title">Funding round</h3>
+                <h2 class="blog__item_subtitle">Round 9 of approvals</h2>
+              </div>
+              <h4 class="blog__item_date">January 1, 2022</h4>
+            </div>
+          </a>
+        </li>
+        <li class="product anim load-right" data-category="fund">
+          <a href="#">
+            <img src="./Blog/Data/Image2.png" alt="image" class="blog_img">
+            <div class="blog__item">
+              <div class="blog__item_main-part">
+                <h3 class="blog__item_title">Funding round</h3>
+                <h2 class="blog__item_subtitle">Round 8 of approvals</h2>
+              </div>
+              <h4 class="blog__item_date">January 1, 2022</h4>
+            </div>
+          </a>
+        </li>
+        <li class="product anim load-btm" data-category="news">
+          <a href="#">
+            <img src="./Blog/Data/Image3.png" alt="image" class="blog_img">
+            <div class="blog__item">
+              <div class="blog__item_main-part">
+                <h3 class="blog__item_title">Funding round</h3>
+                <h2 class="blog__item_subtitle">Round 7 of approved grants</h2>
+              </div>
+              <h4 class="blog__item_date">January 1, 2022</h4>
+            </div>
+          </a>
+        </li>
+        <li class="product anim load-top" data-category="spot">
+          <a href="#">
+            <img src="./Blog/Data/Image4.png" alt="image" class="blog_img">
+            <div class="blog__item">
+              <div class="blog__item_main-part">
+                <h3 class="blog__item_title">Funding round</h3>
+                <h2 class="blog__item_subtitle">Round 6 of approved grants</h2>
+              </div>
+              <h4 class="blog__item_date">January 1, 2022</h4>
+            </div>
+          </a>
+        </li>
+        <li class="product anim load-left" data-category="fund">
+          <a href="#">
+            <img src="./Blog/Data/Image5.png" alt="image" class="blog_img">
+            <div class="blog__item">
+              <div class="blog__item_main-part">
+                <h3 class="blog__item_title">Funding round</h3>
+                <h2 class="blog__item_subtitle">Fifth round of approvals</h2>
+              </div>
+              <h4 class="blog__item_date">January 1, 2022</h4>
+            </div>
+          </a>
+        </li>
+        <li class="product anim load-right" data-category="spot">
+          <a href="#">
+            <img src="./Blog/Data/Image6.png" alt="image" class="blog_img">
+            <div class="blog__item">
+              <div class="blog__item_main-part">
+                <h3 class="blog__item_title">Funding round</h3>
+                <h2 class="blog__item_subtitle">Third round of approvals</h2>
+              </div>
+              <h4 class="blog__item_date">January 1, 2022</h4>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="blog_btn btn-type2 anim load-top">Load more posts</a>
     </div>
   </main>
   <footer class="footer">
@@ -149,7 +192,7 @@
               <a href="#" class="header__nav_item-content anim-lines">
                 FAQ
               </a>
-              <a href="#" class="header__nav_item-content anim-lines">
+              <a href="./Brand.html" class="header__nav_item-content anim-lines">
                 Brand assets
               </a>
               <a href="#" class="header__nav_item-content anim-lines">
@@ -172,6 +215,6 @@
     <img class="footer-bg" src="./Grants/Data/Grid-bottom.png" alt="background">
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./Man/Js/main.js"></script>
+  <script src="./Blog/Js/main.js"></script>
 </body>
 </html>
