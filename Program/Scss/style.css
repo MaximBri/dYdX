@@ -16,7 +16,7 @@ body {
   color: var(--white);
   scroll-behavior: smooth;
   position: relative;
-  background-image: url(/Data/globals/Grid-top.png);
+  background-image: url(../Data/globals/Grid-top.png);
   background-position: top;
   background-repeat: repeat-x;
 }
@@ -254,7 +254,7 @@ body {
 }
 
 .background {
-  background-image: url("/Data/globals/bg.jpeg");
+  background-image: url("../Data/globals/bg.jpeg");
   background-size: 100% 100%;
   background-repeat: repeat-x;
 }
@@ -540,7 +540,7 @@ body {
 }
 body {
   width: 100vw;
-  background-image: url("/Discover initiatives (RFPs)/Data/Grid-top.png");
+  background-image: url("../Discover%initiatives%(RFPs)/Data/Grid-top.png");
   background-position: top left;
   background-repeat: repeat-x;
 }
@@ -664,7 +664,7 @@ body {
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background-image: url("/Discover initiatives (RFPs)/Data/fi_check.svg");
+  background-image: url("../Discover%initiatives%(RFPs)/Data/fi_check.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -693,7 +693,7 @@ body {
 }
 @media (max-width: 768px) {
   .background {
-    background-image: url("/Discover initiatives (RFPs)/Data/DiscoverMobile.png");
+    background-image: url("../Discover%initiatives%(RFPs)/Data/DiscoverMobile.png");
   }
   .product {
     flex-direction: column;
