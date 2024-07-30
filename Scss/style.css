@@ -16,7 +16,7 @@ body {
   color: var(--white);
   scroll-behavior: smooth;
   position: relative;
-  background-image: url(/Data/globals/Grid-top.png);
+  background-image: url("/Data/globals/Grid-top.png");
   background-position: top;
   background-repeat: repeat-x;
 }
